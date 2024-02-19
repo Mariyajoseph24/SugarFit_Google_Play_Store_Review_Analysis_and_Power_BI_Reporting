@@ -74,7 +74,7 @@ g_df2['score']=g_df2['result'].apply(lambda x: (x[0]['score']))
 ```
 g_df2.head()
 ```
-<img width="500" alt="Coding" src="ttps://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e533f34d-73a7-457b-a05a-86a817f0fe1a"><br>
+<img width="500" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e533f34d-73a7-457b-a05a-86a817f0fe1a"><br>
 ```
 g_df2['score'].mean()
 ```
