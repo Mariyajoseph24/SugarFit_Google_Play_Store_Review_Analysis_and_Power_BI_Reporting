@@ -2,7 +2,7 @@
  <h1><a name="importrequiredlibraries">Import Required Libraries</a></h1>
   
 ```python
-rom google_play_scraper import app, Sort ,reviews_all
+from google_play_scraper import app, Sort ,reviews_all
 from app_store_scraper import AppStore
 import pandas as pd 
 import numpy as np 
