@@ -84,7 +84,6 @@ g_df2['sentiment'].value_counts()
 ```
 999
 ```
-```
 g_df2['sentiment'].value_counts(normalize=True)
 ```
 1010
