@@ -26,11 +26,11 @@ g_df2.rename(columns={'reviewId':'ID','userName':'Username','content':'Review','
 g_df2
 
 ```
-<img width="500" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c365a80e-fde3-4b43-b696-35afd74aaec7">
+<img width="500" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c365a80e-fde3-4b43-b696-35afd74aaec7"><br>
 ```
 g_df2['AppRating'].mean()
 ```
-<img width="500" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/43118838-5866-459e-a3ad-9726c8d5fe61">
+<img width="500" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/43118838-5866-459e-a3ad-9726c8d5fe61"><br>
 ```
 !pip install tensorflow
 ```
