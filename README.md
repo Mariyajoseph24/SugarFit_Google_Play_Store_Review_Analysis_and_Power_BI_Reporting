@@ -26,7 +26,7 @@ g_df2.rename(columns={'reviewId':'ID','userName':'Username','content':'Review','
 g_df2
 
 ```
-<img width="700" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c365a80e-fde3-4b43-b696-35afd74aaec7"><br>
+<img width="900" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c365a80e-fde3-4b43-b696-35afd74aaec7"><br>
 ```
 g_df2['AppRating'].mean()
 ```
@@ -66,7 +66,7 @@ g_df2['result']=g_df2['Review'].apply(lambda x: sentiment_analysis(x))
 ```
 g_df2.head()
 ```
-<img width="700" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c85ed335-994a-47d5-8d52-16d0a4815b78"><br>
+<img width="900" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c85ed335-994a-47d5-8d52-16d0a4815b78"><br>
 ```
 g_df2['sentiment']=g_df2['result'].apply(lambda x: (x[0]['label']))
 g_df2['score']=g_df2['result'].apply(lambda x: (x[0]['score']))
@@ -74,7 +74,7 @@ g_df2['score']=g_df2['result'].apply(lambda x: (x[0]['score']))
 ```
 g_df2.head()
 ```
-<img width="700" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e533f34d-73a7-457b-a05a-86a817f0fe1a"><br>
+<img width="900" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e533f34d-73a7-457b-a05a-86a817f0fe1a"><br>
 ```
 g_df2['score'].mean()
 ```
@@ -92,8 +92,8 @@ import plotly.express as px
 fig=px.histogram(g_df2,x='sentiment',color='sentiment', text_auto=True)
 fig.show()
 ```
-<img width="700" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/6ba3152f-3d64-42c2-899b-ff31c419c5cc"><br>
-<img width="700" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/d5764a16-2a05-425a-9083-22a354483f01"><br>
+<img width="900" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/6ba3152f-3d64-42c2-899b-ff31c419c5cc"><br>
+<img width="900" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/d5764a16-2a05-425a-9083-22a354483f01"><br>
 ```
 g_df2.to_csv("C:\\Users\\hp\\Desktop\\newfile.CSV")
 g_df2=pd.read_csv("C:\\Users\\hp\\Desktop\\newfile.csv")
