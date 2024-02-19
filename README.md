@@ -37,6 +37,7 @@ g_df2['AppRating'].mean()
 ```
 import tensorflow as tf
 ```
+```
 !pip install ipykernel
 ```
 ```
