@@ -19,6 +19,7 @@ CREATE TABLE SF1 (
 ```
 111
 <li>Select and viewing the dataset</li>
+
 ```
 SELECT * FROM SF1
 ```
