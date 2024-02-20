@@ -18,10 +18,160 @@ CREATE TABLE SF1 (
 
 ```
 111
-<li>Select and viewing the dataset</li>
+
+<li>Selecting and viewing the dataset</li>
 
 ```
 SELECT * FROM SF1
 ```
 222
+
+<li>Total Number of reviews</li>
+
+```
+SELECT COUNT(*) AS total_reviews
+FROM sf1;
+
+```
+333
+<li>Average App Rating</li>
+
+```
+SELECT AVG(AppRating) AS average_rating
+FROM sf1
+
+
+```
+444
+<li>Review with highest thump count</li>
+
+```
+SELECT Review, ThumbsUpCount
+FROM sf1
+ORDER BY ThumbsUpCount DESC
+LIMIT 1;
+
+
+```
+555
+<li>Users with high number of reviews</li>
+
+```
+SELECT Username, COUNT(*) AS review_count
+FROM sf1
+GROUP BY Username
+ORDER BY review_count DESC
+LIMIT 5;
+
+
+```
+666
+<li>Average Sentiment Score</li>
+
+```
+SELECT AVG(score) AS average_sentiment_score
+FROM sf1;
+
+
+```
+777
+<li>Count of User Reviews that are not replied by company</li>
+
+```
+SELECT COUNT(*)AS not_replied
+FROM SF1
+WHERE companyreply='NULL';
+
+
+```
+888
+<li>Total number of reviews that are replied by company</li>
+
+```
+SELECT id,review
+FROM SF1
+WHERE companyreply='NULL';
+```
+
+<li>Reviews that are not replied by company</li>
+
+```
+SELECT COUNT(*)AS replied
+FROM sf1
+WHERE id NOT IN
+(SELECT id
+FROM SF1
+WHERE companyreply='NULL');
+
+
+```
+9
+
+<li>Reviews with sentiment negative to analyze the issues</li>
+
+```
+SELECT review
+FROM sf1
+WHERE sentiment = 'NEGATIVE';
+
+
+```
+10
+<li>Distribution of ratngs and it's total count</li>
+
+```
+SELECT AppRating, COUNT(*) AS rating_count
+FROM sf1
+GROUP BY AppRating
+ORDER BY rating_count DESC;
+
+```
+11
+<li>Reviews with the text like 'Challenges'</li>
+
+```
+SELECT id,review
+FROM sf1
+WHERE Review LIKE '%challenges%';
+
+```
+12
+<li>Total number of reviews per year</li>
+
+```
+SELECT EXTRACT(YEAR FROM ReviewTime) AS review_year, COUNT(*) AS review_count
+FROM sf1
+GROUP BY review_year
+ORDER BY review_year;
+
+
+```
+13
+<li>Reviews with the text like 'Personalized diet'</li>
+
+```
+SELECT id,review
+FROM sf1
+WHERE Review LIKE '%personalized diet%';
+
+
+```
+14
+<li>Latest 5 reviews and date</li>
+
+```
+SELECT review,reviewtime
+FROM sf1
+ORDER BY ReviewTime DESC
+LIMIT 5;
+
+
+```
+15
+
+
+
+
+
+
 </ul>
