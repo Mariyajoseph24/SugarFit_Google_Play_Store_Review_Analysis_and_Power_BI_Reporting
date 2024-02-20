@@ -17,14 +17,14 @@ CREATE TABLE SF1 (
   score NUMERIC );
 
 ```
-111
+111<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/186def57-7b77-47b8-a46a-ceb0dd7c8aeb">
 
 <li>Selecting and viewing the dataset</li>
 
 ```sql
 SELECT * FROM SF1
 ```
-222
+222<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/029a3b78-0d6d-4d30-bf8f-24f1b2bcd055">
 
 <li>Total Number of reviews</li>
 
@@ -33,7 +33,7 @@ SELECT COUNT(*) AS total_reviews
 FROM sf1;
 
 ```
-333
+333<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3b5e059d-6d0b-493a-9175-2ffeb137d9e2">
 <li>Average App Rating</li>
 
 ```sql
@@ -42,7 +42,7 @@ FROM sf1
 
 
 ```
-444
+444<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/b570d3b8-5056-477a-b29b-75ef9efc65ca">
 <li>Review with highest thump count</li>
 
 ```sql
@@ -53,7 +53,8 @@ LIMIT 1;
 
 
 ```
-555
+555<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/db6b7f20-7f41-407e-920f-a80ccf954915">
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/7ba91e7f-2682-4c41-805a-4d456da0dce8">
 <li>Users with high number of reviews</li>
 
 ```sql
@@ -65,7 +66,7 @@ LIMIT 5;
 
 
 ```
-666
+666<img width="250" alt="Coding" src=" ">
 <li>Average Sentiment Score</li>
 
 ```sql
@@ -74,7 +75,7 @@ FROM sf1;
 
 
 ```
-777
+777<img width="250" alt="Coding" src=" ">
 <li>Count of User Reviews that are not replied by company</li>
 
 ```sql
@@ -84,7 +85,8 @@ WHERE companyreply='NULL';
 
 
 ```
-888
+888<img width="250" alt="Coding" src=" ">
+<img width="250" alt="Coding" src=" ">
 <li>Total number of reviews that are replied by company</li>
 
 ```sql
@@ -105,7 +107,7 @@ WHERE companyreply='NULL');
 
 
 ```
-9
+9<img width="250" alt="Coding" src=" ">
 
 <li>Reviews with sentiment negative to analyze the issues</li>
 
@@ -116,7 +118,7 @@ WHERE sentiment = 'NEGATIVE';
 
 
 ```
-10
+10<img width="250" alt="Coding" src=" ">
 <li>Distribution of ratngs and it's total count</li>
 
 ```sql
@@ -126,7 +128,7 @@ GROUP BY AppRating
 ORDER BY rating_count DESC;
 
 ```
-11
+11<img width="250" alt="Coding" src=" ">
 <li>Reviews with the text like 'Challenges'</li>
 
 ```sql
@@ -135,7 +137,7 @@ FROM sf1
 WHERE Review LIKE '%challenges%';
 
 ```
-12
+12<img width="250" alt="Coding" src=" ">
 <li>Total number of reviews per year</li>
 
 ```sql
@@ -146,7 +148,7 @@ ORDER BY review_year;
 
 
 ```
-13
+13<img width="250" alt="Coding" src=" ">
 <li>Reviews with the text like 'Personalized diet'</li>
 
 ```sql
@@ -156,7 +158,7 @@ WHERE Review LIKE '%personalized diet%';
 
 
 ```
-14
+14<img width="250" alt="Coding" src=" ">
 <li>Latest 5 reviews and date</li>
 
 ```sql
@@ -167,7 +169,8 @@ LIMIT 5;
 
 
 ```
-15
+15<img width="250" alt="Coding" src=" ">
+<img width="250" alt="Coding" src=" ">
 
 
 
