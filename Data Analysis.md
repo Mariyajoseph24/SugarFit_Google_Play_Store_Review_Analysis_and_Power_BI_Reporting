@@ -66,7 +66,7 @@ LIMIT 5;
 
 
 ```
-666<img width="250" alt="Coding" src=" ">
+666<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/262fd4ad-5f8d-48d2-95a5-b4b6e2d48168">
 <li>Average Sentiment Score</li>
 
 ```sql
@@ -75,7 +75,7 @@ FROM sf1;
 
 
 ```
-777<img width="250" alt="Coding" src=" ">
+777<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e70b7572-b098-4d1d-92b4-b56adfaacd46">
 <li>Count of User Reviews that are not replied by company</li>
 
 ```sql
@@ -85,8 +85,8 @@ WHERE companyreply='NULL';
 
 
 ```
-888<img width="250" alt="Coding" src=" ">
-<img width="250" alt="Coding" src=" ">
+888<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/1a92f383-e483-4408-9c27-4fc5dba235d3">
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/cdb3c61d-6d20-4cb4-acc2-a8af1c7ad92c">
 <li>Total number of reviews that are replied by company</li>
 
 ```sql
@@ -107,7 +107,7 @@ WHERE companyreply='NULL');
 
 
 ```
-9<img width="250" alt="Coding" src=" ">
+9<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/14f98363-d600-438b-b278-a63f61377765">
 
 <li>Reviews with sentiment negative to analyze the issues</li>
 
@@ -118,7 +118,7 @@ WHERE sentiment = 'NEGATIVE';
 
 
 ```
-10<img width="250" alt="Coding" src=" ">
+10<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/bbdda107-a70f-4a5e-ab1a-584bfaabbb39">
 <li>Distribution of ratngs and it's total count</li>
 
 ```sql
@@ -128,7 +128,7 @@ GROUP BY AppRating
 ORDER BY rating_count DESC;
 
 ```
-11<img width="250" alt="Coding" src=" ">
+11<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/ea80d384-acc3-4eb2-b6c4-cdf8c0229610">
 <li>Reviews with the text like 'Challenges'</li>
 
 ```sql
@@ -137,7 +137,7 @@ FROM sf1
 WHERE Review LIKE '%challenges%';
 
 ```
-12<img width="250" alt="Coding" src=" ">
+12<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/6249e3b8-58dc-4bf7-a868-3d691c1ef634">
 <li>Total number of reviews per year</li>
 
 ```sql
@@ -148,7 +148,7 @@ ORDER BY review_year;
 
 
 ```
-13<img width="250" alt="Coding" src=" ">
+13<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/ab4c57bc-d55b-40a3-b5bc-720d1dc86b33">
 <li>Reviews with the text like 'Personalized diet'</li>
 
 ```sql
@@ -158,7 +158,7 @@ WHERE Review LIKE '%personalized diet%';
 
 
 ```
-14<img width="250" alt="Coding" src=" ">
+14<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3af290dd-1ba7-47a1-991a-fa2e79cafd74">
 <li>Latest 5 reviews and date</li>
 
 ```sql
@@ -169,8 +169,8 @@ LIMIT 5;
 
 
 ```
-15<img width="250" alt="Coding" src=" ">
-<img width="250" alt="Coding" src=" ">
+15<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3f99e894-82d7-45a0-9562-f1d44e6628a7">
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/be4e0878-d3df-41c3-9af2-aa2505b75244">
 
 
 
