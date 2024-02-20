@@ -34,6 +34,26 @@ FROM sf1;
 
 ```
 333<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3b5e059d-6d0b-493a-9175-2ffeb137d9e2">
+
+<li>Total number of positive reviews</li>
+
+```
+SELECT COUNT(*)
+FROM SF1
+WHERE sentiment='POSITIVE';
+```
+16<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/9ca14fbb-ccd9-4be0-a958-7d7f4585627a">
+
+<li>Total number of negative reviews</li>
+
+```
+SELECT COUNT(*)
+FROM SF1
+WHERE sentiment='NEGATIVE';
+```
+17
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/0484a158-68ea-49bb-bd72-f63cb677ba73">
+
 <li>Average App Rating</li>
 
 ```sql
