@@ -1,5 +1,5 @@
 <h1>Sugarfit Google Play Store Review Analysis and Power BI Reporting</h1>
-<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/Spotify_Data_Analysis_Python_Project/assets/91487663/43749cf9-4eb1-476c-89ea-bf1625b17168">
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit_Google_Play_Store_Review_Analysis_and_Power_BI_Reporting/assets/91487663/b0201363-15f4-40ec-9ed0-9c1f3a2fe9c9">
 <h1>Contents📖</h1>
 <ul>
   <li><a href="#introduction">Introduction</a></li>
