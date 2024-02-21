@@ -1,6 +1,6 @@
 <h1>Data Cleaning and Scraping</h1>
 <ul>
- <li><a name="importrequiredlibraries">Import Required Libraries</a></li>
+ <li>Import Required Libraries</li>
   
 ```python
 from google_play_scraper import app, Sort ,reviews_all
