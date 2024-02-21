@@ -1,4 +1,4 @@
-<h1>Data Scraping & Sentimental Analysis📊 </h1>
+<h1>Data Scraping & Sentiment Analysis📊 </h1>
 <ul>Tools Used🛠️:<br>
 <li>Programming Language: Python<br></li>
 <li>Libraries: Pandas, Numpy, Tensorflow<br></li>
