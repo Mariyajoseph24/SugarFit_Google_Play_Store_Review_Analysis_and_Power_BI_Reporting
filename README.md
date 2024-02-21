@@ -3,7 +3,7 @@
 <h1>Contents📖</h1>
 <ul>
   <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#datascrapingandsentimentalanalysis">Data Scraping and Sentimental Analysis</a></li>
+  <li><a href="#datascrapingandsentimentanalysis">Data Scraping and Sentimental Analysis</a></li>
   <li><a href="#datacleaningandexploration">Data Cleaning and Exploration</a></li>
   <li><a href="#dataanalysis">Data Analysis</a></li>
   <li><a href="#datavisualization">Data Visualization</a></li>
@@ -25,7 +25,7 @@
 <li>IDE: Microsoft Azure Data Studio<br></li></ul>
 
 ---------------------------------------------------------------------------------------------------------------------------------
-<h1><a name="datascrapingandsentimentalanalysis">Data Scraping & Sentimental Analysis📊</a></h1>
+<h1><a name="datascrapingandsentimentanalysis">Data Scraping & Sentiment Analysis📊</a></h1>
 
 <ul>Tools Used🛠️:<br>
 <li>Programming Language: Python<br></li>
