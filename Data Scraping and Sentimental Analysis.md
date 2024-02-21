@@ -1,4 +1,8 @@
 <h1>Data Scraping & Sentimental Analysis📊 </h1>
+<ul>Tools Used🛠️:<br>
+<li>Programming Language: Python<br></li>
+<li>Libraries: Pandas, Numpy, Tensorflow<br></li>
+<li>IDE: Microsoft Azure Data Studio<br></li></ul>
 <ul>
  <li>Import Required Libraries</li>
   
