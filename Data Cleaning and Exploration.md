@@ -1,4 +1,5 @@
 <h1>Data Cleaning and Exploration🧹</h1>
+<ul><li>Tools Used🛠️:Microsoft Excel</li></ul>
 <ul>
 <li>Deleted unwanted columns that is not required for this analysis</li>
 <li>Checked and formatted the cells with proper datatypes</li>
