@@ -26,6 +26,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------
 <h1><a name="datascrapingandsentimentalanalysis">Data Scraping & Sentimental Analysis📊</a></h1>
+
 <ul>Tools Used🛠️:<br>
 <li>Programming Language: Python<br></li>
 <li>Libraries: Pandas, Numpy, Tensorflow<br></li>
@@ -158,7 +159,235 @@ g_df2.to_csv("C:\\Users\\hp\\Desktop\\newfile.CSV")
 g_df2=pd.read_csv("C:\\Users\\hp\\Desktop\\newfile.csv")
 g_df2
 ```
+------------------------------------------------------------------------------------------------------------
 
+<h1><a name="datacleaningandexploration">Data Cleaning and Exploration🧹</a></h1>
+
+<ul><li>Tools Used🛠️:Microsoft Excel</li></ul>
+<ul>
+<li>Deleted unwanted columns that is not required for this analysis</li>
+<li>Checked and formatted the cells with proper datatypes</li>
+<img width="200" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/984f4495-5552-4e3b-bfb4-674fde38bc45">
+  
+<li>Missing Values in each column</li></ul>
+<ol>
+<li>used filter function in excel to identify missing/null values</li>
+<img width="200" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/9c97b9ed-40ba-4fa2-b7b1-a963d60afcf5">
+
+<li>conditional foramtting to identify and highlight the missing values</li></ol>
+<img width="300" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/bac7f686-a690-414e-b0d5-9b99b2d819c7">
+
+<ul><li>Removing the duplicates</li>
+<img width="100" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/bab31516-23dc-4433-a9e9-6ebdff1b5f71">
+
+<li>Handling the missing values by using find & select inbuilt function in excel</li></ul>
+<ol>
+<li>Replaced the blank space with NULL for the column that is TEXT Datatype</li>
+<li>Replaced the blank space with a default date value for the column that is DATE Datatype</li></ol>
+<img width="200" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/c669aeed-ea8b-4a4f-a00e-e63faee38639">
+<img width="200" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/ebc37967-7369-40fa-8fb1-51438bd9b5a6">
+------------------------------------------------------------------------------------------------
+
+<h1><a name="dataanalysis">Data Analysis📈</a></h1>
+<ul><li>Tools Used⚙️:PostgreSQL</li></ul>
+<ul>
+  <li>Creating and importing dataset to postgreSQL</li>
+ 
+</ul>
+
+```sql
+CREATE TABLE SF1 (
+  ID VARCHAR(50),
+  Username VARCHAR(50),
+  Review VARCHAR(5000),
+  AppRating INT,
+  ThumbsUpCount INT,
+  ReviewTime DATE,
+  CompanyReply VARCHAR(5000),
+  ReplyTime DATE,
+  sentiment VARCHAR(10),
+  score NUMERIC );
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/186def57-7b77-47b8-a46a-ceb0dd7c8aeb">
+
+<li>Selecting and viewing the dataset</li>
+
+```sql
+SELECT * FROM SF1
+```
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/029a3b78-0d6d-4d30-bf8f-24f1b2bcd055">
+
+<li>Total Number of reviews</li>
+
+```sql
+SELECT COUNT(*) AS total_reviews
+FROM sf1;
+
+```
+<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3b5e059d-6d0b-493a-9175-2ffeb137d9e2">
+
+<li>Total number of positive reviews</li>
+
+```
+SELECT COUNT(*)
+FROM SF1
+WHERE sentiment='POSITIVE';
+```
+<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/9ca14fbb-ccd9-4be0-a958-7d7f4585627a">
+
+<li>Total number of negative reviews</li>
+
+```
+SELECT COUNT(*)
+FROM SF1
+WHERE sentiment='NEGATIVE';
+```
+
+<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/0484a158-68ea-49bb-bd72-f63cb677ba73">
+
+<li>Average App Rating</li>
+
+```sql
+SELECT AVG(AppRating) AS average_rating
+FROM sf1
+
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/b570d3b8-5056-477a-b29b-75ef9efc65ca">
+<li>Review with highest thump count</li>
+
+```sql
+SELECT Review, ThumbsUpCount
+FROM sf1
+ORDER BY ThumbsUpCount DESC
+LIMIT 1;
+
+
+```
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/db6b7f20-7f41-407e-920f-a80ccf954915">
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/7ba91e7f-2682-4c41-805a-4d456da0dce8">
+<li>Users with high number of reviews</li>
+
+```sql
+SELECT Username, COUNT(*) AS review_count
+FROM sf1
+GROUP BY Username
+ORDER BY review_count DESC
+LIMIT 5;
+
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/262fd4ad-5f8d-48d2-95a5-b4b6e2d48168">
+<li>Average Sentiment Score</li>
+
+```sql
+SELECT AVG(score) AS average_sentiment_score
+FROM sf1;
+
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/e70b7572-b098-4d1d-92b4-b56adfaacd46">
+<li>Count of User Reviews that are not replied by company</li>
+
+```sql
+SELECT COUNT(*)AS not_replied
+FROM SF1
+WHERE companyreply='NULL';
+
+
+```
+<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/1a92f383-e483-4408-9c27-4fc5dba235d3">
+<img width="150" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/cdb3c61d-6d20-4cb4-acc2-a8af1c7ad92c">
+<li>Total number of reviews that are replied by company</li>
+
+```sql
+SELECT id,review
+FROM SF1
+WHERE companyreply='NULL';
+```
+
+<li>Reviews that are not replied by company</li>
+
+```sql
+SELECT COUNT(*)AS replied
+FROM sf1
+WHERE id NOT IN
+(SELECT id
+FROM SF1
+WHERE companyreply='NULL');
+
+
+```
+<img width="300" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/14f98363-d600-438b-b278-a63f61377765">
+
+<li>Reviews with sentiment negative to analyze the issues</li>
+
+```sql
+SELECT review
+FROM sf1
+WHERE sentiment = 'NEGATIVE';
+
+
+```
+<img width="300" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/bbdda107-a70f-4a5e-ab1a-584bfaabbb39">
+<li>Distribution of ratngs and it's total count</li>
+
+```sql
+SELECT AppRating, COUNT(*) AS rating_count
+FROM sf1
+GROUP BY AppRating
+ORDER BY rating_count DESC;
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/ea80d384-acc3-4eb2-b6c4-cdf8c0229610">
+<li>Reviews with the text like 'Challenges'</li>
+
+```sql
+SELECT id,review
+FROM sf1
+WHERE Review LIKE '%challenges%';
+
+```
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/6249e3b8-58dc-4bf7-a868-3d691c1ef634">
+<li>Total number of reviews per year</li>
+
+```sql
+SELECT EXTRACT(YEAR FROM ReviewTime) AS review_year, COUNT(*) AS review_count
+FROM sf1
+GROUP BY review_year
+ORDER BY review_year;
+
+
+```
+<img width="250" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/ab4c57bc-d55b-40a3-b5bc-720d1dc86b33">
+<li>Reviews with the text like 'Personalized diet'</li>
+
+```sql
+SELECT id,review
+FROM sf1
+WHERE Review LIKE '%personalized diet%';
+
+
+```
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3af290dd-1ba7-47a1-991a-fa2e79cafd74">
+<li>Latest 5 reviews and date</li>
+
+```sql
+SELECT review,reviewtime
+FROM sf1
+ORDER BY ReviewTime DESC
+LIMIT 5;
+
+
+```
+<img width="400" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/3f99e894-82d7-45a0-9562-f1d44e6628a7">
+<img width="100" alt="Coding" src="https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/be4e0878-d3df-41c3-9af2-aa2505b75244">
+</ul>
+------------------------------------------------------------------------------------------------------
+<h1><a name="datavisualization">Data Visualization</a></h1>
+<ul><li>Tools Used⚙️:Microsoft Power BI</li></ul>
+<img width="900" alt="Coding" src=https://github.com/Mariyajoseph24/SugarFit-Sentiment-Insights-Google-Play-Store-Review-Analysis-and-Power-BI-Reporting/assets/91487663/784658f5-f0df-439a-abe6-b616168c8390>
 
 
 
