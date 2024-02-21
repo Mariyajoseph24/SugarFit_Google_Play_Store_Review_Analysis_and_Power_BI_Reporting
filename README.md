@@ -3,7 +3,7 @@
 <h1>Contents📖</h1>
 <ul>
   <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#datascrapingandsentimentanalysis">Data Scraping and Sentimental Analysis</a></li>
+  <li><a href="#datascrapingandsentimentanalysis">Data Scraping and Sentiment Analysis</a></li>
   <li><a href="#datacleaningandexploration">Data Cleaning and Exploration</a></li>
   <li><a href="#dataanalysis">Data Analysis</a></li>
   <li><a href="#datavisualization">Data Visualization</a></li>
