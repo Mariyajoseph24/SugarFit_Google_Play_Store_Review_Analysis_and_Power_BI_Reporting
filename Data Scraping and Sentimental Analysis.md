@@ -1,4 +1,4 @@
-<h1>Data Scraping & Sentimental Analysis </h1>
+<h1>Data Scraping & Sentimental Analysis📊 </h1>
 <ul>
  <li>Import Required Libraries</li>
   
