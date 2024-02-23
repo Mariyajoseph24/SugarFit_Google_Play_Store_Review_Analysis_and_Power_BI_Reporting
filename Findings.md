@@ -1,7 +1,7 @@
 <h1>Findings</h1>
 <p>Based on the analysis conducted in the project, the following findings and suggestions can be derived:</p>
 <ol>
-<li>Understanding User Issues: By analyzing the negative reviews, we gained insights into user concerns and issues. This enables us to address them more effectively, leading to improved user satisfaction.</li>
+<li><b></b>Understanding User Issues:</b> By analyzing the negative reviews, we gained insights into user concerns and issues. This enables us to address them more effectively, leading to improved user satisfaction.</li>
 
 <li>Identifying Review Trends: The project helped in identifying trends in user reviews, such as common topics mentioned in negative feedback or frequently praised aspects in positive reviews. This information can guide product development and marketing strategies.</li>
 
